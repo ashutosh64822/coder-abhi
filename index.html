@@ -23,108 +23,192 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- google fonts link  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css  -->
+
+    <style>
+      .poppins-font {
+        font-family: "Poppins", serif;
+      }
+    </style>
+
+    <!-- tailwind css script link  -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-color": "#7E22CE",
+              "secondary-color": "#000000",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="poppins-font">
     <header>
       <nav>
-        <div class="navbar ">
-
+        <div class="navbar py-5">
           <!-- left nav  -->
 
           <div class="navbar-start">
-
-            <div class="flex items-center">
+            <div class="flex items-center text-xl font-bold">
               <div>
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-              </div>
-              <h1>CoderAbhi</h1>
-            </div>
-            <!-- dropdown section  -->
-
-
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
+                  class="w-5 h-5 fill-primary-color"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
+                  viewBox="0 0 640 512"
+                >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16" />
+                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                  />
                 </svg>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
+              <h1 class="text-primary-color pl-2">CoderAbhi</h1>
             </div>
-
-            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
           </div>
 
           <!-- mid nav  -->
 
           <div class="navbar-center hidden lg:flex">
             <ul class="flex items-center justify-center gap-5">
-              <li><a href="">Home</a></li>
-              <li><a href="">Courses</a></li>
-              <li><a href="">Tutorial</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Notes</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="">My Gear</a></li>
-              <li><a href="">Work With Us</a></li>
-              <li></li>
+              <li><a class="text-base" href="">Home</a></li>
+              <li><a class="text-base" href="">Courses</a></li>
+              <li><a class="text-base" href="">Tutorial</a></li>
+              <li><a class="text-base" href="">Blog</a></li>
+              <li><a class="text-base" href="">Notes</a></li>
+              <li><a class="text-base" href="">Contact</a></li>
+              <li><a class="text-base" href="">My Gear</a></li>
+              <li><a class="text-base" href="">Work With Us</a></li>
             </ul>
           </div>
 
           <!-- right nav  -->
-           
+
           <div class="navbar-end gap-5">
-            <a href=""><label class="flex cursor-pointer gap-2">
+            <!-- theme controller section  -->
+
+            <input
+              type="checkbox"
+              value="synthwave"
+              class="toggle theme-controller"
+            />
+
+            <!-- login button  -->
+
+            <a
+              class="btn bg-primary-color text-white px-3 py-2 hidden lg:inline-flex"
+              >Login</a
+            >
+
+            <!-- signup button  -->
+
+            <a
+              class="btn bg-primary-color text-white px-3 py-2 hidden lg:inline-flex"
+              >Signup</a
+            >
+          </div>
+
+          <!-- dropdown section  -->
+
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
+                class="h-5 w-5"
                 fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <circle cx="12" cy="12" r="5" />
+              >
                 <path
-                  d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" />
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
               </svg>
-              <input type="checkbox" value="synthwave" class="toggle theme-controller" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-              </svg>
-            </label></a>
-            <a class="btn">Login</a>
-            <a class="btn">Signup</a>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Courses</a></li>
+              <li><a>Tutorial</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Notes</a></li>
+              <li><a>Contact</a></li>
+              <li><a>My Gear</a></li>
+              <li><a>Work With Us</a></li>
+              <li><a>Login</a></li>
+              <li><a>Signup</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- secondary nav section  -->
+
+        <div class="flex justify-between mt-2">
+          <!-- left nav  -->
+
+          <!-- home icon  -->
+
+          <div class="">
+            <svg
+              class="w-5 h-5 fill-primary-color"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+              />
+            </svg>
+          </div>
+
+          <!-- mid section  -->
+
+          <div class="">
+            <ul class="flex gap-6">
+              <li><a href="">HTML</a></li>
+              <li><a href="">CSS</a></li>
+              <li><a href="">JS</a></li>
+              <li class="hidden lg:inline-flex"><a href="">C</a></li>
+              <li class="hidden lg:inline-flex"><a href="">C++</a></li>
+              <li class="hidden lg:inline-flex"><a href="">JAVA</a></li>
+              <li class="hidden lg:inline-flex"><a href="">PYTHON</a></li>
+              <li class="hidden lg:inline-flex"><a href="">PHP</a></li>
+              <li class="hidden lg:inline-flex"><a href="">REACT JS</a></li>
+            </ul>
+          </div>
+
+          <!-- right nav section  -->
+
+          <!-- search icon  -->
+
+          <div class="">
+            <svg
+              class="w-5 h-5 fill-primary-color"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
           </div>
         </div>
       </nav>
