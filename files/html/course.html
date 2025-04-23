@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial</title>
+    <title>Course</title>
     <!-- daisyUI cdn link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -66,20 +66,22 @@
           <!-- left nav  -->
 
           <div class="navbar-start">
-            <div class="flex items-center text-xl font-bold">
-              <div>
-                <svg
-                  class="w-5 h-5 fill-primary-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-                  />
-                </svg>
+            <a href="/index.html">
+              <div class="flex items-center text-xl font-bold">
+                <div>
+                  <svg
+                    class="w-5 h-5 fill-primary-color"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                    />
+                  </svg>
+                </div>
+                <h1 class="text-primary-color pl-2">CoderAbhi</h1>
               </div>
-              <h1 class="text-primary-color pl-2">CoderAbhi</h1>
-            </div>
+            </a>
           </div>
 
           <!-- menu nav  -->
@@ -89,9 +91,7 @@
               <li><a class="text-base" href="/index.html">Home</a></li>
               <li><a class="text-base" href="./course.html">Courses</a></li>
               <li>
-                <a class="text-base" href="../html/tutorial.html"
-                  >Tutorial</a
-                >
+                <a class="text-base" href="../html/tutorial.html">Tutorial</a>
               </li>
               <li><a class="text-base" href="">Blog</a></li>
               <li><a class="text-base" href="">Notes</a></li>
@@ -161,73 +161,17 @@
       <hr />
     </header>
     <main>
-      <!-- tutorial section -->
+      <!-- course section -->
       <section class="mx-20">
         <h1 class="text-3xl text-center mt-10 font-semibold mb-10">COURSE</h1>
-        <div class="grid grid-cols-4 gap-5">
-          <!-- box-1  -->
-          <div
-            class="flex flex-col items-center px-6 py-4 shadow-lg rounded-xl"
-          >
-            <img class="w-20 h-20" src="../assets/html.webp" alt="" />
-            <h3 class="mt-2 font-semibold text-xl mb-10">HTML Tutorial</h3>
-            <p class="mb-10 text-stone-300">
-              The word hypertext markup language is composed of the words
-              “hypertext” and “mar...
-            </p>
-            <button class="btn bg-black text-white rounded-lg">
-              Start Learning !
-            </button>
-          </div>
-          <!-- box-2  -->
-          <div
-            class="flex flex-col items-center px-6 py-4 shadow-lg rounded-xl"
-          >
-            <img class="w-20 h-20" src="../assets/css.webp" alt="" />
-            <h3 class="mt-2 font-semibold text-xl mb-10">CSS Tutorial</h3>
-            <p class="mb-10 text-stone-300">
-              CSS stands for Cascading Style Sheets. It describes how HTML
-              elements are to be ...
-            </p>
-            <button class="btn bg-black text-white rounded-lg">
-              Start Learning !
-            </button>
-          </div>
-          <!-- box-3  -->
-          <div
-            class="flex flex-col items-center px-6 py-4 shadow-lg rounded-xl"
-          >
-            <img class="w-20 h-20" src="../assets/js.webp" alt="" />
-            <h3 class="mt-2 font-semibold text-xl mb-10">
-              JavaScript Tutorial
-            </h3>
-            <p class="text-stone-300">
-              JavaScript is a lightweight, cross-platform, OOP language.
-            </p>
-            <button class="btn bg-black text-white rounded-lg mt-15">
-              Start Learning !
-            </button>
-          </div>
-          <!-- box-4  -->
-          <div
-            class="flex flex-col items-center px-6 py-4 shadow-lg rounded-xl"
-          >
-            <img class="w-20 h-20" src="../assets/html.webp" alt="" />
-            <h3 class="mt-2 font-semibold text-xl mb-10">HTML Tutorial</h3>
-            <p class="mb-10 text-stone-300">
-              The word hypertext markup language is composed of the words
-              “hypertext” and “mar...
-            </p>
-            <button class="btn bg-black text-white rounded-lg">
-              Start Learning !
-            </button>
-          </div>
-        </div>
+      </section>
+      <section class=" mt-20">
+        <h1 class=" text-center text-2xl font-semibold">SORRY ! NO COURSE AVAILABLE RIGHT NOW </h1>
       </section>
     </main>
     <!-- footer section  -->
     <footer
-      class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 pl-20 mt-10"
+      class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 pl-20 mt-25"
     >
       <nav>
         <h6 class="footer-title">Main</h6>

@@ -47,6 +47,9 @@
       tailwind.config = {
         theme: {
           extend: {
+            backgroundImage: {
+              "coding-journey": " url(/assests/icons/1.wedp)",
+            },
             colors: {
               clifford: "#da373d",
               "primary-color": "#7E22CE",
@@ -68,20 +71,22 @@
           <!-- left nav  -->
 
           <div class="navbar-start">
-            <div class="flex items-center text-xl font-bold">
-              <div>
-                <svg
-                  class="w-5 h-5 fill-primary-color"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 512"
-                >
-                  <path
-                    d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-                  />
-                </svg>
+            <a href="/index.html">
+              <div class="flex items-center text-xl font-bold">
+                <div>
+                  <svg
+                    class="w-5 h-5 fill-primary-color"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                  >
+                    <path
+                      d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+                    />
+                  </svg>
+                </div>
+                <h1 class="text-primary-color pl-2">CoderAbhi</h1>
               </div>
-              <h1 class="text-primary-color pl-2">CoderAbhi</h1>
-            </div>
+            </a>
           </div>
 
           <!-- menu nav  -->
@@ -89,7 +94,9 @@
           <div class="navbar-center hidden lg:flex">
             <ul class="flex items-center justify-center gap-5">
               <li><a class="text-base" href="index.html">Home</a></li>
-              <li><a class="text-base" href="./files/html/course.html">Courses</a></li>
+              <li>
+                <a class="text-base" href="./files/html/course.html">Courses</a>
+              </li>
               <li>
                 <a class="text-base" href="./files/html/tutorial.html"
                   >Tutorial</a
@@ -241,89 +248,94 @@
           </div>
         </div>
       </section>
+      <!-- start your codding journey  -->
+      <section class="bg-cover bg-fixed"
+      style="background-image: url('/assests/icons/1.jpg')">
+        <div class="inset-0 bg-white bg-opacity-70 backdrop-blur-sm py-10">
+          <h1 class="text-5xl  text-center font-semibold mt-10">
+            Start Your Coding Journey
+          </h1>
+          <p class="text-center mt-8">
+            Learn coding step-by-step with bangladesh most loved programming
+            mentor.
+          </p>
+          <div class="flex justify-center items-center mb-10">
+            <button class="py-3 px-4 mt-10 text-white bg-black rounded-lg font-semibold">Start Now</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer section  -->
 
-    <footer class="footer flex justify-between items-center p-4">
-      <!-- left footer  -->
-
-      <aside class="grid-flow-col items-center">
-        <div class="flex items-center justify-center gap-3">
-          <img
-            class="rounded-full h-10 w-10"
-            src="./assests/hero-img.jpg"
-            alt=""
-          />
-          <div>
-            <h1 class="font-bold">CoderAbhi</h1>
-            <p>Managed by CA Solutions</p>
-          </div>
-        </div>
-      </aside>
-
-      <!-- mid footer  -->
-
-      <div>
-        <ul class="md:flex items-center justify-center gap-8">
-          <li><a href="">Privacy</a></li>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Refund</a></li>
-        </ul>
-      </div>
-
-      <!-- right footer  -->
-
-      <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <!-- facebook icon  -->
-
-        <a>
+    <footer
+      class="footer sm:footer-horizontal bg-base-200 text-base-content p-10 pl-20 "
+    >
+      <nav>
+        <h6 class="footer-title">Main</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Work With Us</a>
+        <a class="link link-hover">My Gear</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Learn</h6>
+        <a class="link link-hover">Courses</a>
+        <a class="link link-hover">Tutorials</a>
+        <a class="link link-hover">Notes</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms</a>
+        <a class="link link-hover">Privacy</a>
+        <a class="link link-hover">Refund</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Social</h6>
+        <a class="link link-hover flex">
           <svg
+            class="w-5 h-5 mr-2"
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
+            viewBox="0 0 496 512"
           >
             <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-            ></path>
-          </svg>
-        </a>
-
-        <!-- twitter icon  -->
-
-        <a>
-          <svg
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            /></svg
+          >GitHub</a
+        >
+        <a class="link link-hover flex"
+          ><svg
+            class="w-5 h-5 mr-2"
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
+            viewBox="0 0 512 512"
           >
             <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
-            ></path>
-          </svg>
-        </a>
-
-        <!-- youtube icon  -->
-
-        <a>
-          <svg
+              d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+            /></svg
+          >Twitter (X)</a
+        >
+        <a class="link link-hover flex"
+          ><svg
+            class="w-5 h-5 mr-2"
             xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            class="fill-current"
+            viewBox="0 0 576 512"
           >
             <path
-              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
-            ></path>
-          </svg>
-        </a>
+              d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+            /></svg
+          >YouTube</a
+        >
+        <a class="link link-hover flex"
+          ><svg
+            class="w-5 h-5 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+            /></svg
+          >Facebook</a
+        >
       </nav>
     </footer>
   </body>
